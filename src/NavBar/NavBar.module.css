@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+.navContainer {
+     @apply w-[300px] min-h-screen bg-black overflow-y-auto flex flex-col border-none;
+    scrollbar-width: thin; 
+    scrollbar-color: #7f56d9 transparent; 
+}
+
+.header {
+    @apply text-white text-6xl font-bold p-4 mb-7 flex-shrink-0 border-none;
+}
+
+.mainNav {
+    @apply text-white p-4 text-3xl flex-grow;
+}
+
+.navList li {
+    @apply mb-5;
+}
+
+.navLink {
+    @apply block text-white no-underline;
+}
+
+.socials {
+    @apply flex flex-col w-fit pl-4 pb-2 flex-shrink-0;
+}
+
+.socials a {
+    @apply w-20 mb-5 ml-2.5;
+    @apply scale-100 transition duration-300;
+}
+
+.socials img {
+    @apply w-20 mb-2 rounded-full;
+}
+
+.copyright {
+    @apply text-white p-4 flex-shrink-0;
+}
+
+.active {
+    @apply text-white bg-gradient-to-b from-gray-900 to-purple-900 rounded-2xl p-1 duration-500 w-fit font-bold;
+}
+
+.navList li:hover{
+    @apply underline;
+}
+
+.socials img:hover{
+    @apply scale-110;
+}

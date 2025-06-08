@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+
+@keyframes fadeInDelayed {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.home {
+  @apply text-white flex w-full h-[95vh] overflow-y-hidden;
+  opacity: 0; 
+  animation: fadeInDelayed 0.6s ease forwards;
+  animation-delay: 0.1s; /* opóźnienie przed pojawieniem się */
+}
+
+
+.description {
+     @apply flex flex-col items-center justify-center text-center w-3/6 ml-[11%];
+}
+
+.line {
+    @apply font-normal text-6xl;
+}
+
+.name {
+    @apply text-6xl font-bold mt-2;
+}
+
+.job {
+    @apply text-2xl font-semibold mt-2;
+}
+
+.contact {
+    @apply text-2xl font-semibold mt-10;
+}
+
+.picture {
+    @apply relative w-full max-w-full mx-auto my-auto;
+    height: 80vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.picture img {
+    @apply max-w-full max-h-full object-contain lg:rounded-full shadow-lg shadow-purple-500/50;
+}
+
+/* Przy mniejszych ekranach, żeby nie nachodziło */
+
+@media (max-width: 1024px) {
+    .picture {
+        @apply hidden;
+    }
+}

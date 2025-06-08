@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+@keyframes fadeInDelayed {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contact {
+  @apply text-white flex w-full h-[95vh] overflow-y-hidden;
+  opacity: 0; 
+  animation: fadeInDelayed 0.6s ease forwards;
+  animation-delay: 0.1s; /* opóźnienie przed pojawieniem się */
+}
+
+.info {
+    @apply flex flex-col mt-20 text-left w-3/6 ml-[7%] mr-0;
+}
+
+.name{
+    @apply font-extralight text-2xl mb-7
+}
+
+.intro{
+    @apply font-bold text-6xl mb-10
+}
+
+.location{
+    @apply font-normal text-xl mb-20
+}
+
+.phone{
+    @apply mb-2 font-bold;
+}
+
+.mail{
+    @apply mb-2 font-bold;
+}
+
+
+/* Form css */
+
+.formContainer {
+  @apply w-[50%] h-[90%] p-6 rounded-2xl shadow-2xl mt-[5%] mr-20;
+  background: linear-gradient(135deg, #a044ff, #ff6a00);
+  @apply flex flex-col gap-4 text-white;
+}
+
+.form {
+  @apply flex flex-col h-full;
+}
+
+.title{
+    @apply text-2xl font-bold uppercase text-left m-5 justify-start;
+}
+
+.row {
+  @apply flex gap-4 p-10 justify-center;
+}
+
+.input {
+  @apply flex-1 bg-transparent border-b border-white py-2 px-1 outline-none placeholder-white text-sm;
+}
+
+.textArea {
+  @apply block mx-auto bg-transparent border-b border-white py-2 px-1 outline-none placeholder-white resize-x h-32 text-sm w-[80%] mt-[10%];
+}
+
+.attachWrapper {
+  @apply flex flex-col items-center py-2 px-1 h-32 mt-[5%];
+}
+
+.attachLabel {
+  @apply text-white text-3xl text-left w-full mb-2 mt-[5%];
+}
+
+.fileInput {
+  @apply cursor-pointer self-start mt-5 border-2 border-gray-400 rounded-md p-3 bg-white hover:border-blue-500;
+  width: 250px; 
+  text-align: center;
+  color: #333;
+}
+
+.button {
+  @apply flex items-center gap-2 bg-black text-white px-6 py-3 text-sm font-semibold w-fit self-start mt-auto;
+  transition: background 0.3s ease;
+}
+
+.arrow {
+  @apply text-orange-300;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+  box-shadow: 0 0 0px 1000px transparent inset !important;
+  -webkit-text-fill-color: white !important; 
+  transition: background-color 5000s ease-in-out 0s;
+}
