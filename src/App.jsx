@@ -4,6 +4,7 @@ import NavBar from './NavBar/NavBar';
 import Home from './Home/Home';
 import Contact from './Contact/Contact';
 import Education from './Education/Education'
+import Technologies from './Technologies/Technologies'
 
 function About() {
   return <h2>About page</h2>;
@@ -12,9 +13,7 @@ function Projects() {
   return <h2>Projects page</h2>;
 }
 
-function Technologies(){
-  return <h2>Technologies page</h2>;
-}
+
 
 export default function App() {
   return (

@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
 body{
-  @apply bg-gradient-to-b from-gray-900 to-purple-900 overflow-y-hidden;
+  @apply bg-gradient-to-br from-[#FF5722] to-[#3b0472] overflow-y-hidden;
   height: 100%;
 }
