@@ -44,6 +44,16 @@ export default function NavBar() {
           </li>
           <li>
             <NavLink
+              to="/technologies"
+              className={({ isActive }) =>
+                isActive ? `${styles.navLink} ${styles.active}` : styles.navLink
+              }
+            >
+              TECH STACK
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
               to="/projects"
               className={({ isActive }) =>
                 isActive ? `${styles.navLink} ${styles.active}` : styles.navLink

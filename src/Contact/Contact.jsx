@@ -1,5 +1,12 @@
 import styles from './Contact.module.css';
 
+function sendEmail(event) {
+    event.preventDefault(); // ← to zatrzymuje odświeżenie
+    // tu wpisz swoją logikę wysyłania maila
+    console.log('Wysyłanie maila...');
+}
+
+
 export default function Contact() {
     return (
         <div className={styles.contact}>
@@ -13,7 +20,7 @@ export default function Contact() {
             </div>
 
             <div className={styles.formContainer}>
-                <form className={styles.form}>
+                <form className={styles.form} onSubmit={sendEmail}>
                     <h1 className={styles.title}>Contact me</h1>
 
                     <div className={styles.row}>
@@ -30,7 +37,7 @@ export default function Contact() {
                         <input type='file' id='file' className={styles.fileInput}></input>
                     </div>
 
-                    <button className={styles.button}>
+                    <button className={styles.button} type='submit'>
                         Submit now <span className={styles.arrow}>↗</span>
                     </button>
                 </form>

@@ -40,7 +40,8 @@
 }
 
 .active {
-    @apply text-white bg-gradient-to-b from-gray-900 to-purple-900 rounded-2xl p-1 duration-500 w-fit font-bold;
+    @apply text-white rounded-2xl p-1 duration-500 w-fit font-bold;
+    background: linear-gradient(135deg, #a044ff, #ff6a00);
 }
 
 .navList li:hover{

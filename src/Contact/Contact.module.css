@@ -80,15 +80,19 @@
 }
 
 .fileInput {
-  @apply cursor-pointer self-start mt-5 border-2 border-gray-400 rounded-md p-3 bg-white hover:border-blue-500;
+  @apply cursor-pointer self-start mt-5 border-2 border-gray-400 rounded-2xl p-3 bg-white hover:border-blue-500;
   width: 250px; 
   text-align: center;
   color: #333;
 }
 
 .button {
-  @apply flex items-center gap-2 bg-black text-white px-6 py-3 text-sm font-semibold w-fit self-start mt-auto;
+  @apply flex items-center gap-2 bg-black text-white px-6 py-3 text-sm font-semibold w-fit self-start mt-auto cursor-pointer rounded-2xl;
   transition: background 0.3s ease;
+}
+
+.button:hover{
+  @apply brightness-150 scale-110 transition duration-300
 }
 
 .arrow {
