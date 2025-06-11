@@ -14,7 +14,7 @@
 
 
 .home {
-  @apply text-white flex w-full h-[95vh] overflow-y-hidden;
+  @apply text-white flex w-full h-full overflow-y-hidden;
   opacity: 0; 
   animation: fadeInDelayed 0.6s ease forwards;
   animation-delay: 0.1s; /* opóźnienie przed pojawieniem się */

@@ -12,14 +12,15 @@
 }
 
 .education{
-  @apply text-white flex w-full h-[95vh] overflow-y-hidden mt-15 p-4;
+  @apply text-white flex w-full h-full overflow-y-auto pt-20 p-4;
   opacity: 0; 
   animation: fadeInDelayed 0.6s ease forwards;
   animation-delay: 0.1s; 
+
 }
 
 .umcs{
-    @apply flex flex-col justify-start ml-10 mr-20 w-[60%]
+    @apply flex flex-col justify-start ml-10 mr-20 w-full
 }
 
 .name{
@@ -50,7 +51,7 @@
 /* SKNI */
 
 .skni{
-    @apply flex flex-col justify-start ml-10 mr-20 w-[70%]
+    @apply flex flex-col justify-start ml-10 mr-20 w-full
 }
 
 .workshops{

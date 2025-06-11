@@ -3,12 +3,10 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import NavBar from './NavBar/NavBar'; 
 import Home from './Home/Home';
 import Contact from './Contact/Contact';
-import Education from './Education/Education'
-import Technologies from './Technologies/Technologies'
+import Education from './Education/Education';
+import Technologies from './Technologies/Technologies';
+import About from './About/About';
 
-function About() {
-  return <h2>About page</h2>;
-}
 function Projects() {
   return <h2>Projects page</h2>;
 }
@@ -22,7 +20,7 @@ export default function App() {
         <nav className="navContainer">
           <NavBar />
         </nav>
-        <main className="flex-1 p-4" >
+        <main className="flex-1 p-4 ml-[300px]" >
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />

@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 .navContainer {
-     @apply w-[300px] min-h-screen bg-black overflow-y-auto flex flex-col border-none;
+     @apply w-[300px] min-h-screen bg-black overflow-y-auto flex flex-col border-none absolute;
     scrollbar-width: thin; 
     scrollbar-color: #7f56d9 transparent; 
 }

@@ -22,7 +22,6 @@ export default function Contact() {
   return (
     <div className={styles.contact}>
       <div className={styles.info}>
-        <p className={styles.name}>Contact</p>
         <h1 className={styles.intro}>REACH ME OUT</h1>
         {contactDetails.map(({ type, text }, index) => (
           <p key={index} className={styles[type]}>

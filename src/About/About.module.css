@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@keyframes fadeInDelayed {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about {
+  @apply h-full mx-20 flex flex-wrap flex-col md:flex-row justify-center gap-12 px-0 py-10 text-white;
+  opacity: 0;
+  animation: fadeInDelayed 0.6s ease forwards;
+  animation-delay: 0.1s;
+}
+
+.heading {
+  @apply flex flex-col justify-start flex-1 min-w-[300px] max-w-[480px];
+}
+
+.greeting {
+  @apply font-semibold text-xl mb-5;
+}
+
+.header {
+  @apply text-5xl font-bold mb-10;
+}
+
+.damian {
+  @apply p-1 flex flex-col justify-center items-center scale-95;
+}
+
+.me {
+  @apply max-w-full max-h-full object-contain rounded-full shadow-lg shadow-orange-500/50 mb-5;
+}
+
+.name {
+  @apply text-3xl font-extrabold mb-2 bg-gradient-to-r from-pink-400 via-yellow-300 via-green-300 to-cyan-400 bg-clip-text text-transparent;
+}
+
+.desc {
+  @apply text-xl font-semibold mb-10;
+}
+
+.cv {
+  @apply flex flex-col justify-center items-center mb-2 font-bold text-gray-300;
+}
+
+.cv:hover {
+  @apply underline cursor-pointer;
+}
+
+.cv:active {
+  @apply text-black scale-105;
+}
+
+.description {
+  @apply flex-1 min-w-[280px] max-w-[600px] flex flex-col justify-start pl-5;
+}
+
+.aboutMe {
+  @apply text-6xl font-bold mb-20;
+}
+
+.content {
+  @apply text-xl font-semibold;
+}
