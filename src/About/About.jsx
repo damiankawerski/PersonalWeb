@@ -13,8 +13,8 @@ export default function About() {
                     <p className={styles.name}>DAMIAN KAWERSKI</p>
                     <p className={styles.desc}>Full-Stack Developer and SKNI VP</p>
                 </div>
-                <a className={styles.cv} href="src/assets/Damian Kawerski CV English.pdf" download>Download CV in English</a>
-                <a className={styles.cv} href="src/assets/Damian Kawerski CV Polski.pdf" download>Download Cv in Polish</a>
+                <a className={styles.cv} href="public/Damian Kawerski CV English.pdf" download>Download CV in English</a>
+                <a className={styles.cv} href="public/Damian Kawerski CV Polski.pdf" download>Download Cv in Polish</a>
             </div>
 
             <div className="w-[1px] bg-gradient-to-b from-pink-400 via-yellow-300 to-cyan-400 mx-6"></div>

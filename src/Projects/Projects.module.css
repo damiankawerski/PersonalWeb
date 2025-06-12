@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.projects{
+    @apply p-4 flex flex-row gap-4 flex-wrap
+}

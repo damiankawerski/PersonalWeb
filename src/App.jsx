@@ -6,11 +6,7 @@ import Contact from './Contact/Contact';
 import Education from './Education/Education';
 import Technologies from './Technologies/Technologies';
 import About from './About/About';
-
-function Projects() {
-  return <h2>Projects page</h2>;
-}
-
+import Projects from './Projects/Projects'
 
 
 export default function App() {
